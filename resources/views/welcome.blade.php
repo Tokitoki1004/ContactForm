@@ -69,6 +69,8 @@
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ route('contact.index') }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">お問い合わせ一覧</a>
+                        <a href="{{ route('contact.create') }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">新規登録</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
