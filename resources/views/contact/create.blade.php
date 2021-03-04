@@ -11,7 +11,7 @@
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
-                        </div>
+                 .       </div>
                     @endif
 
                     @if ($errors->any())
@@ -24,7 +24,7 @@
                     </div>
                     @endif
                     
-                    createです
+                    （createページ）
                     <form method="POST" action="{{ route('contact.store') }}">
                     @csrf
                     <div class="form-group">
