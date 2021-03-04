@@ -29,22 +29,22 @@
                     @csrf
                     <div class="form-group">
                     <label for="your_name">氏名</label>
-                    <input type="text" class="form-control" id="your_name" name="your_name">
+                    <input type="text" class="form-control" id="your_name" name="your_name" value="{{ old('your_name') }}">
                     </div>
                     <div class="form-group">
 
                     <label for="title">件名</label>
-                    <input type="text" class="form-control" id="title" name="title">
+                    <input type="text" class="form-control" id="title" name="title" value="{{ old('title') }}">
                     </div>
                     <div class="form-group">
 
                     <label for="email">メールアドレス</label>
-                    <input type="text" class="form-control" id="email" name="email">
+                    <input type="text" class="form-control" id="email" name="email" value="{{ old('email') }}">
                     </div>
                     <div class="form-group">
 
                     <label for="url">ホームページ</label>
-                    <input type="text" class="form-control" id="url" name="url">
+                    <input type="text" class="form-control" id="url" name="url" value="{{ old('url') }}">
                     </div>
                    
 
@@ -75,7 +75,7 @@
                     <div class="form-group">
 
                     <label for="contact">お問い合わせ内容</label>
-                    <textarea class="form-control" name="contact" id="contact" rows="10"></textarea>
+                    <textarea class="form-control" name="contact" id="contact" rows="10">{{ old('contact') }}</textarea>
                     </div>
                     
                     
