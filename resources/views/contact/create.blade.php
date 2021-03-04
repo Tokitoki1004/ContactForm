@@ -24,7 +24,7 @@
                     </div>
                     @endif
                     
-                    （createページ）
+                    （create）
                     <form method="POST" action="{{ route('contact.store') }}">
                     @csrf
                     <div class="form-group">
